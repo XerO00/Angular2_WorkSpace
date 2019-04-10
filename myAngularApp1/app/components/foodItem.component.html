@@ -1,0 +1,13 @@
+<div [class.liked]="isLiked"> 
+    <h1>
+        Welcome foodItem.component.html {{foodItem.name}} {{foodItem.description}}
+    </h1>
+    
+    <!-- #below is property binding example which is not working current-->
+    <p [innerHtml] = "foodItem.name" ></p>
+    <!-- #below is event binfing -->
+    <button (click)="onLikeButtonPressed($event)">Like</button>
+ <!-- # TWO way binding -->
+    <input [(ngModel)]= "foodItem.name"/>
+
+</div>

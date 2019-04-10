@@ -1,0 +1,34 @@
+<!-- #region 
+<p>Welcome to testComp.component.html</p>
+
+
+<div  [@textState]="textState" >
+  <p style="margin-bottom: 60px"> The para of testComp</p>
+</div>
+<div class="testComp">
+  <button [@buttonState="buttonState"] (click)="toggleButtonState(); toggleTextState()" >ClickMe</button>
+</div>  
+-->
+
+<!-- for the void Aniamtion
+      
+</div>-->
+
+<!-- Setting up parallel Aniamtion group-->
+
+<div class="testComp">
+
+    <button  (click)="showTestDev= !showTestDev">Show and Hide</button>
+
+    <div style="background-color: red; width:399px"  *ngIf="showTestDiv" [@slideIn] 
+    (@slideIn.start)="animStarted($event)" (@slideIn.done)="animStopped($event)"    >
+            <p>test dev</p>
+    </div>  
+</div>
+
+
+
+
+
+
+

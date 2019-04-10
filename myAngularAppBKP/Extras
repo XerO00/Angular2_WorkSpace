@@ -1,0 +1,41 @@
+
+Extra line removed from main.ts
+import {AppComponent} from './app.component';//extra line apart from the plan
+ 
+
+============================
+Below lilnes are removed from tsconfig.json
+
+
+  "exclude": [
+    "node_modules",
+    "typings/main",
+    "typings/main.d.ts"
+  ]
+================================
+below lines are removed from system.config,js
+ src:{
+                format: 'register',
+                defaultExtension: 'ts'
+            },  boot: {
+                format: 'register',
+                defaultExtension: 'ts'
+              }
+
+================================
+index.html is having lines as below and they are modified to lines below to them and then it workd fine
+
+ <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="https://unpkg.com/zone.js@0.6.23?main=browser"></script>
+
+
+<script src="node_modules/core-js/client/shim.min.js"></script>
+<script src="node_modules/zone.js/dist/zone.js"></script>
+<script src="node_modules/reflect-metadata/Reflect.js"></script>
+<script src="node_modules/systemjs/dist/system.src.js"></script>
+ ============================
+Extra line from angular.module.ts
+
+import {MD_FoodFormComponent} from './components/md-foodform.component';
+

@@ -1,0 +1,11 @@
+
+Angular CLLI installation
+
+1)sudo npm install anugular-cli --save
+
+2)ng new create myAngularCliApp
+
+3) cd to foods after creating foods folder and then run below command
+ng g component foodList
+
+
